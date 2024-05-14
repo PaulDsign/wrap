@@ -10,18 +10,19 @@
     <link rel="icon" href="asset/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/40ae107c2a.js" crossorigin="anonymous"></script>
     <title>Wrap</title>
 </head>
 
 <body>
 
     <header>
-        <img class="header-logo" src="asset/Logotext.png" alt="logo with text">
+        <img src="asset/Logotext.png" alt="logo with text">
         <nav>
             <a class="active" href="#">Home</a>
-            <a href="#">About Us</a>
+            <a href="#about-us">About Us</a>
             <a href="#">Contact Us</a>
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
         </nav>
         <button class="main-btn">
             Get the APP
@@ -30,7 +31,7 @@
 
     <div class="hero-section">
         <div class="hero-head">
-            <h1 class="hero-header">
+            <h1>
                 Get Your Life Back in Order with <span>Wrap</span>
             </h1>
 
@@ -43,13 +44,15 @@
         <div class="hero-image">
             <div class="color-1"></div>
             <div class="color-2"></div>
-            <img id="left-hero-image" src="asset/Frame 1000007798.png" alt="hero img01">
-            <img id="middle-hero-image" src="asset/iPhone 14 Plus (34) 1.png" alt="hero img02">
-            <img id="right-hero-image" src="asset/Frame 1000007797.png" alt="hero ung03">
+            <img id="left-hero-image" src="asset/Frame 1000007798.png" alt="hero img01" loading="lazy">
+            <img id="middle-hero-image" src="asset/iPhone 14 Plus (34) 1.png" alt="hero img02" loading="lazy">
+            <img id="right-hero-image" src="asset/Frame 1000007797.png" alt="hero ung03" loading="lazy">
         </div>
-        <button class="hero-btn">
-            Get the APP
-        </button>
+        <div class="hero-btn">
+            <button>
+                Get the APP
+            </button>
+        </div>
     </div>
 
     <section id="about-us">
@@ -61,22 +64,26 @@
                 project workflows. with Wrap, streamline your tasks, elevate productivity, and achieve your goals
                 like never before.
             </p>
-            <button class="main-btn">
+            <button class="about-btn">
                 Join Us
             </button>
         </div>
 
-        <img id="about-img" src="asset/Right container.png" alt="">
+        <img id="about-img" src="asset/Right container.png" alt="" loading="lazy">
 
     </section>
 
-    <div>
-        <div class="in-order">
+    <div class="in-order">
+        <div>
             <h1 class="in-order-h1">
                 Get Your Life Back In Order With <span>Wrap</span>
             </h1>
         </div>
-        <img id="in-order-img" src="asset/Frame 54.png" alt="">
+        <div class="in-order-cards">
+            <img src="asset/in-order 010.png" alt="" loading="lazy">
+            <img src="asset/in-order 02.png" alt="" loading="lazy">
+            <img src="asset/in-order 030.png" alt="" loading="lazy">
+        </div>
     </div>
 
     <div class="features">
@@ -96,7 +103,7 @@
                     your team.
                 </li>
             </ul>
-            <button id="features-btn" class="main-btn">
+            <button id="features-btn">
                 Get the APP
             </button>
         </div>
@@ -106,25 +113,25 @@
         <h1>
             How our clients have <span>Wrapped</span> up their daily tasks
         </h1>
-        <div class="testimonial-wrapper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div>
-                            <div class="testimonial-details">
-                                <img id="testimonial-img" src="asset/img00.jpeg" alt="">
-                                <div class="testimonial-profile">
-                                    <h3>
-                                        Ella Johnson
-                                    </h3>
+        <div class="container">
 
-                                    <div class="testimonial-star">
-                                        <img src="asset/Star 7.png" alt="">
-                                        <img src="asset/Star 7.png" alt="">
-                                        <img src="asset/Star 7.png" alt="">
-                                        <img src="asset/Star 7.png" alt="">
-                                        <img src="asset/Star 7.png" alt="">
-                                    </div>
+            <div class="main-card">
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="details">
+                            <img id="testimonial-img" src="asset/img00.jpeg" alt="">
+                            <div class="profile">
+                                <h3>
+                                    Ella Johnson
+                                </h3>
+
+                                <div class="testimonial-star">
+                                    <img src="asset/Star 7.png" alt="">
+                                    <img src="asset/Star 7.png" alt="">
+                                    <img src="asset/Star 7.png" alt="">
+                                    <img src="asset/Star 7.png" alt="">
+                                    <img src="asset/Star 7.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -135,10 +142,10 @@
                         </p>
                     </div>
 
-                    <div class="testimonial-card">
-                        <div class="testimonial-details">
+                    <div class="card">
+                        <div class="details">
                             <img id="testimonial-img" src="asset/Daniel img.jpeg" alt="">
-                            <div class="testimonial-profile">
+                            <div class="rofile">
                                 <h3>
                                     Daniel Lee
                                 </h3>
@@ -160,10 +167,10 @@
                         </p>
                     </div>
 
-                    <div class="testimonial-card">
-                        <div class="testimonial-details">
+                    <div class="card">
+                        <div class="details">
                             <img id="testimonial-img" src="asset/Tega img.jpeg" alt="">
-                            <div class="testimonial-profile">
+                            <div class="profile">
                                 <h3>
                                     Tega Yehny
                                 </h3>
@@ -183,9 +190,8 @@
                             to boost productivity. Thanks!"
                         </p>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
+                    <!-- <div class="swiper-slide">
                     <div class="testimonial-card">
                         <div class="testimonial-details">
                             <img id="testimonial-img" src="asset/Davidson img.jpeg" alt="">
@@ -208,191 +214,202 @@
                             before.
                             I love it and recommend."
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
 
-        <button class="main-btn test-btn">
-            Join Us
-        </button>
+        <div class="join-us">
+            <button class="join-us-btn">
+                Join Us
+            </button>
+        </div>
 
     </div>
 
-    <div>
+    <div class="app-download">
         <h1>
             Download <span>Wrap</span> and Get Started
         </h1>
         <p>
-            An all in one platform for getting daily tasks done, scheduling appointments, prject management, and so much
+            An all in one platform for getting daily tasks done, scheduling appointments, project management, and so
+            much
             more.
         </p>
-        <div>
-            <img src="asset/iPhone 14 Plus (35) 1.png" alt="">
-            <img src="asset/iPhone 14 Plus (34) 2.png" alt="">
-            <img src="asset/iPhone 14 Plus 1.png" alt="">
+        <div class="app-screens">
+            <img src="asset/iPhone 14 Plus (35) 1.png" alt="" loading="lazy">
+            <img src="asset/iPhone 14 Plus (34) 2.png" alt="" loading="lazy">
+            <img src="asset/iPhone 14 Plus 1.png" alt="" loading="lazy">
         </div>
-        <button class="main-btn">
-            Download now
-        </button>
+        <div class="app-download-btn-wrapper">
+            <button class="app-download-btn">
+                Download now
+            </button>
+        </div>
     </div>
 
-    <section>
+    <section id="pricing">
 
         <h1>
             <span>Our</span> Pricing Packages
         </h1>
-        <p>
+        <p class="pricing-p">
             An all in one platform for getting daily tasks done, scheduling appointments, project management, and so
             much more
         </p>
 
-        <div>
+        <div class="pricing-wrapper">
 
-            <div>
-                <h2>
+            <div class="pricing-basic">
+                <h2 class="h2">
                     Basic
                 </h2>
-                <h2>
-                    0.0$/mo
+                <h2 class="amount">
+                    0.0$/<span class="per-month">mo</span>
                 </h2>
-                <p>
+                <p class="basic-p">
                     Get access to the basic features Wrap offers
                 </p>
+                <hr>
 
                 <h3>
                     Features
                 </h3>
 
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Task Management
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Limited Project Creation
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Collaboration
                     </p>
                 </div>
+                <div class="pricing-button-wrapper">
+                    <button class="pricing-button">
+                        Get the APP
+                    </button>
+                </div>
 
-                <button class="main-btn">
-                    Get the APP
-                </button>
             </div>
 
 
-            <div>
-                <h2>
+            <div class="pricing-premium">
+                <h2 class="premium-h2">
                     Premium
                 </h2>
-                <h2>
-                    89.79$/mo
+                <h2 class="premium-amount">
+                    89.79$/<span class="pre-per-month">mo</span>
                 </h2>
-                <p>
+                <p class="premium-p">
                     Get access to the exclusive features Wrap offers
                 </p>
+                <hr>
 
-                <h3>
+                <h3 class="pre-h3">
                     Features
                 </h3>
 
-                <div>
-                    <img src="" alt="">
+                <div class="premium-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Advancced Task Management
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="premium-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Priority Support
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="premium-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Enhanced Security
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="premium-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Integration Optionsy
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="premium-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Personalization
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="premium-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Unlimited Projects
                     </p>
                 </div>
 
-                <button class="main-btn">
-                    Get the APP
-                </button>
+                <div class="premium-button-wrapper">
+                    <button class="premium-button">
+                        Get the APP
+                    </button>
+                </div>
             </div>
 
 
-            <div>
-                <h2>
+            <div class="pricing-basic">
+                <h2 class="h2">
                     Business
                 </h2>
-                <h2>
-                    60.3$/mo
+                <h2 class="amount">
+                    60.3$/<span class="per-month">mo</span>
                 </h2>
-                <p>
+                <p class="business-p">
                     Get access to the enterprise features Wrap offers
                 </p>
+                <hr class="business-hr">
 
                 <h3>
                     Features
                 </h3>
 
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Enhanced Task Management
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Unlimited Projects
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Team Collaboration
                     </p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="pricing-features">
+                    <i class="fa-solid fa-circle-check"></i>
                     <p>
                         Customizable Reminders
                     </p>
                 </div>
 
-                <button class="main-btn">
-                    Get the APP
-                </button>
+                <div class="pricing-button-wrapper">
+                    <button class="pricing-button">
+                        Get the APP
+                    </button>
+                </div>
             </div>
 
         </div>
@@ -401,12 +418,12 @@
 
     <div>
 
-        <div>
+        <div class="Wrapped">
             <h2>
                 Let's start getting you <span>Wrapped</span> up!
             </h2>
-            <div>
-                <input type="email">
+            <div class="wrapped-input">
+                <input type="email" placeholder="Type in your email">
                 <button class="main-btn">
                     Join Us
                 </button>
@@ -417,27 +434,28 @@
 
     <footer>
 
-        <div>
+        <div class="footer-links">
 
-            <div>
-                <img src="asset/Logotext.png" alt="">
+            <div class="footer-social">
+                <img class="footer-logo" src="asset/Logotext.png" alt="">
                 <p>
                     We can help you to reach your goals
                 </p>
-
-                <div>
-                    <img src="asset/new-Twitter-logo-x-black-png 1.png" alt="">
-                    <img src="asset/instagram-1-svgrepo-com 1.png" alt="">
-                    <img src="asset/linkdin.png" alt="">
+                <div class="footer-social-logo">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <div class="footer-ig">
+                        <img src="asset/instagram-1-svgrepo-com 1.svg" alt="">
+                    </div>
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </div>
             </div>
 
-            <div>
+            <div class="footer-wrap-links">
                 <h3>
                     Wrap
                 </h3>
 
-                <ul>
+                <ul class="wrap-links">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -453,12 +471,12 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-help">
                 <h3>
                     Help Center
                 </h3>
 
-                <ul>
+                <ul class="footer-help-links">
                     <li>
                         <a href="#">Privacy Policy</a>
                     </li>
@@ -474,12 +492,12 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-pricing">
                 <h3>
                     Pricing
                 </h3>
 
-                <ul>
+                <ul class="footer-pricing-links">
                     <li>
                         <a href="#">Basic</a>
                     </li>
@@ -492,14 +510,14 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-btn">
 
                 <h1>
                     Get updates from our Newsletter
                 </h1>
 
-                <div>
-                    <input type="email">
+                <div class="footer-input">
+                    <input type="email" placeholder="Type in our email">
                     <button>
                         Send
                     </button>
@@ -508,10 +526,12 @@
             </div>
         </div>
 
-        <div>
-            <hr>
-            <img src="asset/Logo.png" alt="">
-            <hr>
+        <div class="footer-copyright">
+            <div class="footer-line">
+                <hr>
+                <img src="asset/Logo.png" alt="">
+                <hr>
+            </div>
             <p>
                 &copy; 2024 Wrap. All rights reserved, <a href="#">Privacy Policy</a> | <a href="#">Termms of
                     Service</a> | <a href="#">Contact Us</a>
